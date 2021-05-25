@@ -1,7 +1,7 @@
 name: "."
-title: "distill_example"
+title: "A distill example"
 description: |
-  distill_example
+  Instructions to make a distill website in program R
 output_dir: "docs"
 navbar:
   right:

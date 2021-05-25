@@ -18,14 +18,14 @@ site: distill::distill_website
 
 
 # Summary
-We can create great free reproducible websites using Rstudio, the distill package and GitHub pages. Furthermore, by using GitHub as our code repository we can ensure that our code is safe, and that we can roll back changes if we damage our code. There are a variety of ways to create a distill website but this is the one that works well for me.
+We can create great technical websites using Rstudio, the distill package and GitHub pages. Furthermore, by using GitHub as our code repository we can ensure that our code is safe and reproducible. Thanks to GitHub, which is a code repository, we can roll back changes if we damage our code. Did I mention that all of these tools are free?
 
-Indeed this website was created from the code and the steps given below.
+There are a variety of ways to create a distill website but this is one that works well for me. Indeed this website was created from the code and the steps given below.
 
 <br>
 
 # Getting started
-In order to get started we will need to be registered on GitHub and have RStudio and R installed on our computer. The distill package will also need to be installed (see <https://rstudio.github.io/distill/website.html>). 
+In order to get started you will need to be registered on GitHub and have RStudio and R installed on our computer. The distill package will also need to be installed (see <https://rstudio.github.io/distill/website.html>). 
 
 The main code for the layout of the website will be written in Rmarkdown (a good introduction can be found here <https://rmarkdown.rstudio.com/.)
 
@@ -41,7 +41,7 @@ We begin by creating a new GitHub repository, giving the project a description, 
 
 ## Copy URL 
 
-Go the green radio button and copy the URL. We will need pass this information to RStudio so it knows where to put the files.
+The next step is to go to the green radio button and copy the URL. We will need pass this information to RStudio so it knows where to put the files when it exports to GitHub (a process known as a 'push').
 
 ![](screenshots/Slide2.PNG)
 
@@ -50,7 +50,7 @@ Go the green radio button and copy the URL. We will need pass this information t
 
 ## Install 'distill' package
 
-Install the 'distill' package in R either via the 'Packages' pane or via code
+Now install the 'distill' package in RStudio either via the 'Packages' pane or via the following code:
 
 ```{r eval = FALSE}
 install.packages("distill")
@@ -59,7 +59,7 @@ install.packages("distill")
 <br>
 
 ## New project via Version Control
-Next we create a new project using the 'Version Control' option. This allows us to link our GitHub URL to our RStudio project.
+Next we create a new project in RStudio using the 'Version Control' option. This allows us to link our GitHub URL to our RStudio project.
 
 ![](screenshots/Slide5.PNG)
 
@@ -83,7 +83,7 @@ RStudio now 'pulls' the pre-exising files from your GitHub URL into your project
 
 ## Render website 
 
-Next we run the following code to create a website that can be displayed on GitHub pages.
+Next we run the following code to create a website that can be displayed in RStudio (and later pushed to GitHub).
 
 ```{r eval = FALSE}
 library(distill)
@@ -91,17 +91,14 @@ library(distill)
 create_website(dir = ".", title = "distill_example", gh_pages = TRUE)
 ```
 
-This will then render the files required for a simple website including a home and about tab.
+This will then create the files required for a simple website including a home and about tab.
 
 ![](screenshots/Slide10.PNG)
 
-
-You will then be presented with your index.Rmd (RMarkdown) file which forms your website's home page. The top portion of your RMarkdown file, bounded by '---''s is contains the YAML script which defines the look of a particular page. This can be altered to customise some aspects of its layout.
+You will then be presented with your index.Rmd (RMarkdown) file which forms your website's home page. The top portion of your RMarkdown file, bounded by a line of dashes (**`---`**), contains the YAML script which defines the look of a particular page. This can be altered to customise some aspects of the page's layout.
 
 ![](screenshots/Slide11.PNG)
 
-
-<br>
 
 ### Close the project
 
@@ -111,7 +108,7 @@ Next close the project and reopen it.
 
 ## Build the website
 
-A build tab should now appear in the top right hand corner pane. Click on it. On the left hand side you will see a hammer icon. Click on it and your website be rendered by RStudio. If you fully open the window you will see an option in the top right hand side to view the website in your browser. this will give a good indication of its final look.
+A build tab (should now appear in the top right hand corner pane. Click on it.  Click on it and your website be rendered by RStudio. If you open the buidl tab you will be presented with a hammer icon labelled **Build Website**. When you click on the icon on it your files will be formatted for website deployment and the website will be rendered in an RStudio window.  If you fully open the window you will see an option in the top left hand side to **Open the Website** in your browser -- this will give you a good indication of its final look.
 
 <br>
 
@@ -119,11 +116,11 @@ A build tab should now appear in the top right hand corner pane. Click on it. On
 
 ## Commit changes to GitHub
 
-Now when we click on the Git tab up on the right hand side, we will see there a list is compiled of the the file changes we have made since we first 'pulled' from GitHub.  What we want to do is 'commit' these changes to GitHUb, which means that these changes will be changed when we next 'push' the changes to out repository. To do this we tick all the files we want updated (which is all of them) and then press the commit button.
+Now when we click on the Git tab up on the right hand side, we will see there a list is compiled of the the file changes we have made since we first 'pulled' from GitHub.  What we want to do is 'commit' these changes to GitHUb, which means that these changes will be implemented when we next 'push' the changes to out repository. To do this we tick all the files we want updated (which is all of them) and then press the commit button.
 
 ![](screenshots/Slide13.PNG)
 
-We will then we asked to add a comment (which will help us track the changes we make). Now, it is important to know that nothing will update on the GitHub site until we press the push button. Once we press the push button the window we see something like:
+We will then be asked to add a comment (which will help us track the changes we make). Now, it is important to know that nothing will update on the GitHub site until we press the push button. Once we press the push button we will see something like:
 
 
 ![](screenshots/Slide14.PNG)
@@ -155,7 +152,7 @@ Now that you have done that you will see highlighted text appears saying "Your s
 
 <br>
 
-Copy the URL to your browser.
+Copy the URL to your browser and hit enter.
 
 # Admire your website
 
@@ -166,12 +163,12 @@ Be patient -- it may take 10-15 minutes for your website to appear. Take time ou
 
 # Next steps
 
-You are now in a position to add more content to your website by adding more text or graphics via RMarkdown. 
+You are now in a position to add more content to your website by ammending existing Rmarkdown pages or adding new ones. 
 
 
 ## Acknowledgments {.appendix}
 
-This website would not be possible with out the tools made by RStudio especially the 'distill' package by  JJ Allaire and Rich Iannone and Alison {Presmanes Hill} and Yihui Xie.
+This website would not be possible with out the tools made by RStudio especially the 'distill' package by  J.J. Allaire, Rich Iannone, Alison Presmanes Hill, and Yihui Xie.
 
 
 
