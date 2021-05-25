@@ -111,7 +111,7 @@ Next close the project and reopen it.
 
 ## Build the website
 
-A build tab should now appear in the top right hand corner pane. Click on it. On the left hand side you will see a hammer icon. Click on it and your website be rendered by RStudio. If you fully opne the window you will see an option in the top right hand side to view the website in your browser. this will give a good indication of its final look.
+A build tab should now appear in the top right hand corner pane. Click on it. On the left hand side you will see a hammer icon. Click on it and your website be rendered by RStudio. If you fully open the window you will see an option in the top right hand side to view the website in your browser. this will give a good indication of its final look.
 
 <br>
 
@@ -164,8 +164,14 @@ Be patient -- it may take 10-15 minutes for your website to appear. Take time ou
 ![](screenshots/Slide18.PNG)
 
 
+# Next steps
+
+You are now in a position to add more content to your website by adding more text or graphics via RMarkdown. 
 
 
+## Acknowledgments {.appendix}
+
+This website would not be possible with out the tools made by RStudio especially the 'distill' package by  JJ Allaire and Rich Iannone and Alison {Presmanes Hill} and Yihui Xie.
 
 
 

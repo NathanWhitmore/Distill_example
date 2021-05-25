@@ -1,10 +1,11 @@
 ---
 title: "About this site"
 description: |
-  Some additional details about the website
+  Some generic information about me
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+My name is I'm Nathan, and I’m a conservation scientist and practitioner. If you want to get in touch feel free to do so through my GitHub site: <https://github.com/NathanWhitmore>
