@@ -86,30 +86,33 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>A distill example: Making a distill website</title>
+  <title>An example: Making a distill website</title>
   
   <meta property="description" itemprop="description" content="How to make a distill website with RStudio and GitHub pages"/>
   
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
   
   <meta name="article:author" content="Nathan Whitmore"/>
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="A distill example: Making a distill website"/>
+  <meta property="og:title" content="An example: Making a distill website"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content="How to make a distill website with RStudio and GitHub pages"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="A distill example"/>
+  <meta property="og:site_name" content="An example"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="A distill example: Making a distill website"/>
+  <meta property="twitter:title" content="An example: Making a distill website"/>
   <meta property="twitter:description" content="How to make a distill website with RStudio and GitHub pages"/>
   
   <!--/radix_placeholder_meta_tags-->
+  
+  <meta name="citation_reference" content="citation_title=Distill for r markdown;citation_publication_date=2018;citation_author=JJ Allaire;citation_author=Rich Iannone;citation_author=Alison Presmanes Hill;citation_author=Yihui Xie"/>
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","description","output","site"]}},"value":[{"type":"character","attributes":{},"value":["Making a distill website"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["first_name","last_name","url","affiliation","affiliation_url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Nathan"]},{"type":"character","attributes":{},"value":["Whitmore"]},{"type":"character","attributes":{},"value":["https://nathanwhitmore.github.io/reproducible/"]},{"type":"character","attributes":{},"value":["Reproducible"]},{"type":"character","attributes":{},"value":["https://nathanwhitmore.github.io/reproducible/"]},{"type":"character","attributes":{},"value":["0000-0002-7811-5102"]}]}]},{"type":"character","attributes":{},"value":["How to make a distill website with RStudio and GitHub pages\n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]}]}]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","creative_commons","description","output","bibliography","site"]}},"value":[{"type":"character","attributes":{},"value":["Making a distill website"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["first_name","last_name","url","affiliation","affiliation_url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Nathan"]},{"type":"character","attributes":{},"value":["Whitmore"]},{"type":"character","attributes":{},"value":["https://nathanwhitmore.github.io/reproducible/"]},{"type":"character","attributes":{},"value":["Reproducible"]},{"type":"character","attributes":{},"value":["https://nathanwhitmore.github.io/reproducible/"]},{"type":"character","attributes":{},"value":["0000-0002-7811-5102"]}]}]},{"type":"character","attributes":{},"value":["CC BY"]},{"type":"character","attributes":{},"value":["How to make a distill website with RStudio and GitHub pages\n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]}]}]},{"type":"character","attributes":{},"value":["distill.bib"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2061,11 +2064,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a href="index.html" class="title">A distill example</a>
+<a href="index.html" class="title">An example</a>
 </div>
 <div class="nav-right">
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
+<a href="https://github.com/NathanWhitmore/Distill_example">
+<i class="fab fa-github" aria-hidden="true"></i>
+</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2108,17 +2114,18 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li><a href="#admire-your-website">Admire your website</a></li>
 <li><a href="#next-steps">Next steps</a><ul>
 <li><a href="#acknowledgments">Acknowledgments</a></li>
+<li><a href="#code">Code</a></li>
 </ul></li>
 </ul>
 </nav>
 </div>
 <h1 id="summary">Summary</h1>
-<p>We can create great technical websites using Rstudio, the distill package and GitHub pages. Furthermore, by using GitHub as our code repository we can ensure that our code is safe and reproducible. Thanks to GitHub, which is a code repository, we can roll back changes if we damage our code. Did I mention that all of these tools are free?</p>
+<p>We can create great technical websites using program <a href="https://www.r-project.org/">R</a>, <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a>, the <a href="https://rstudio.github.io/distill/">distill</a> package, and <a href="https://github.com">GitHub</a> pages. Furthermore, by using GitHub as our code repository we can ensure that our code is safe and reproducible. Thanks to GitHub, which is a code repository, we can roll back changes if we damage our code. All of these tools: GitHub, RStudio, R and the distill package are free?</p>
 <p>There are a variety of ways to create a distill website but this is one that works well for me. Indeed this website was created from the code and the steps given below.</p>
 <p><br></p>
 <h1 id="getting-started">Getting started</h1>
 <p>In order to get started you will need to be registered on GitHub and have RStudio and R installed on our computer. The distill package will also need to be installed (see <a href="https://rstudio.github.io/distill/website.html" class="uri">https://rstudio.github.io/distill/website.html</a>).</p>
-<p>The main code for the layout of the website will be written in Rmarkdown (a good introduction can be found here &lt;<a href="https://rmarkdown.rstudio.com/" class="uri">https://rmarkdown.rstudio.com/</a>.)</p>
+<p>The main code for the layout of the website will be written in R Markdown (a good introduction can be found here &lt;<a href="https://rmarkdown.rstudio.com/" class="uri">https://rmarkdown.rstudio.com/</a>.)</p>
 <p><br></p>
 <h2 id="create-repository">Create repository</h2>
 <p>We begin by creating a new GitHub repository, giving the project a description, a readme file, and a license. This basically creates a place on the internet for our files.</p>
@@ -2146,7 +2153,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><br></p>
 <h3 id="paste-url">Paste URL</h3>
 <p><img src="screenshots/Slide7.PNG" /></p>
-<p>RStudio now ‘pulls’ the pre-exising files from your GitHub URL into your project folder. You will see the files appear in your environment pane.</p>
+<p><br></p>
+<p>RStudio now ‘pulls’ the pre-existing files from your GitHub URL into your project folder. You will see the files appear in your environment pane.</p>
 <p><img src="screenshots/Slide8.PNG" /></p>
 <p><br></p>
 <h2 id="render-website">Render website</h2>
@@ -2161,17 +2169,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <p>This will then create the files required for a simple website including a home and about tab.</p>
 <p><img src="screenshots/Slide10.PNG" /></p>
-<p>You will then be presented with your index.Rmd (RMarkdown) file which forms your website’s home page. The top portion of your RMarkdown file, bounded by a line of dashes (<strong><code>---</code></strong>), contains the YAML script which defines the look of a particular page. This can be altered to customise some aspects of the page’s layout.</p>
+<p>You will then be presented with your index.Rmd (R Markdown) file which forms your website’s home page. The top portion of your R Markdown file, bounded by a line of dashes (<strong><code>---</code></strong>), contains the YAML script which defines the look of a particular page. This can be altered to customise some aspects of the page’s layout.</p>
 <p><img src="screenshots/Slide11.PNG" /></p>
 <h3 id="close-the-project">Close the project</h3>
 <p>Next close the project and reopen it.</p>
 <p><br></p>
 <h2 id="build-the-website">Build the website</h2>
-<p>A build tab (should now appear in the top right hand corner pane. Click on it. Click on it and your website be rendered by RStudio. If you open the buidl tab you will be presented with a hammer icon labelled <strong>Build Website</strong>. When you click on the icon on it your files will be formatted for website deployment and the website will be rendered in an RStudio window. If you fully open the window you will see an option in the top left hand side to <strong>Open the Website</strong> in your browser – this will give you a good indication of its final look.</p>
-<p><br></p>
+<p>A build tab (should now appear in the top right hand corner pane. Click on it. Click on it and your website be rendered by RStudio. If you open the build tab you will be presented with a hammer icon labeled <strong>Build Website</strong>. When you click on the icon on it your files will be formatted for website deployment and the website will be rendered in an RStudio window. If you fully open the window you will see an option in the top left hand side to <strong>Open the Website</strong> in your browser – this will give you a good indication of its final look.</p>
 <p><img src="screenshots/Slide12.PNG" /></p>
+<p><br></p>
 <h2 id="commit-changes-to-github">Commit changes to GitHub</h2>
-<p>Now when we click on the Git tab up on the right hand side, we will see there a list is compiled of the the file changes we have made since we first ‘pulled’ from GitHub. What we want to do is ‘commit’ these changes to GitHUb, which means that these changes will be implemented when we next ‘push’ the changes to out repository. To do this we tick all the files we want updated (which is all of them) and then press the commit button.</p>
+<p>Now when we click on the Git tab up on the right hand side, we will see there a list is compiled of the the file changes we have made since we first ‘pulled’ from GitHub. What we want to do is ‘commit’ these changes to GitHub, which means that these changes will be implemented when we next ‘push’ the changes to out repository. To do this we tick all the files we want updated (which is all of them) and then press the commit button.</p>
 <p><img src="screenshots/Slide13.PNG" /></p>
 <p>We will then be asked to add a comment (which will help us track the changes we make). Now, it is important to know that nothing will update on the GitHub site until we press the push button. Once we press the push button we will see something like:</p>
 <p><img src="screenshots/Slide14.PNG" /></p>
@@ -2187,16 +2195,23 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h3 id="copy-the-public-url">Copy the public URL</h3>
 <p>Now that you have done that you will see highlighted text appears saying “Your site is ready to be published at…”.</p>
 <p><img src="screenshots/Slide17.PNG" /></p>
-<p><br></p>
 <p>Copy the URL to your browser and hit enter.</p>
+<p><br></p>
 <h1 id="admire-your-website">Admire your website</h1>
 <p>Be patient – it may take 10-15 minutes for your website to appear. Take time out to enjoy this little success. What you see should look something like:</p>
 <p><img src="screenshots/Slide18.PNG" /></p>
 <h1 id="next-steps">Next steps</h1>
-<p>You are now in a position to add more content to your website by ammending existing Rmarkdown pages or adding new ones.</p>
+<p>You are now in a position to add more content to your website by amending existing R Markdown pages or adding new ones. A great place to start on this journey is <a href="https://rstudio.github.io/distill/" class="uri">https://rstudio.github.io/distill/</a></p>
 <h2 id="acknowledgments" class="appendix">Acknowledgments</h2>
-<p>This website would not be possible with out the tools made by RStudio especially the ‘distill’ package by J.J. Allaire, Rich Iannone, Alison Presmanes Hill, and Yihui Xie.</p>
+<p>This website would not be possible with out the tools made by RStudio especially the ‘distill’ package (<span class="citation" data-cites="allaire2018distill">Allaire et al. (<a href="#ref-allaire2018distill" role="doc-biblioref">2018</a>)</span>).</p>
+<h2 id="code" class="appendix">Code</h2>
+<p>The final code used to render this page is available at <a href="https://github.com/NathanWhitmore/Distill_example" class="uri">https://github.com/NathanWhitmore/Distill_example</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-allaire2018distill">
+<p>Allaire, JJ, Rich Iannone, Alison Presmanes Hill, and Yihui Xie. 2018. “Distill for R Markdown.” <a href="https://rstudio.github.io/distill">https://rstudio.github.io/distill</a>.</p>
+</div>
+</div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2208,7 +2223,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom"></div>
+<div class="appendix-bottom">
+<h3 id="references">References</h3>
+<div id="references-listing"></div>
+<h3 id="reuse">Reuse</h3>
+<p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
+</div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->

@@ -7,18 +7,20 @@ author:
   affiliation: Reproducible
   affiliation_url: https://nathanwhitmore.github.io/reproducible/
   orcid_id: 0000-0002-7811-5102
+creative_commons: CC BY  
 description: |
   How to make a distill website with RStudio and GitHub pages
 output:
   distill::distill_article:
     toc: yes
     toc_depth: 2
+bibliography: distill.bib
 site: distill::distill_website
 ---
 
 
 # Summary
-We can create great technical websites using Rstudio, the distill package and GitHub pages. Furthermore, by using GitHub as our code repository we can ensure that our code is safe and reproducible. Thanks to GitHub, which is a code repository, we can roll back changes if we damage our code. Did I mention that all of these tools are free?
+We can create great technical websites using program [R](https://www.r-project.org/), [RStudio](https://www.rstudio.com/products/rstudio/download/), the [distill](https://rstudio.github.io/distill/) package, and [GitHub](https://github.com) pages. Furthermore, by using GitHub as our code repository we can ensure that our code is safe and reproducible. Thanks to GitHub, which is a code repository, we can roll back changes if we damage our code. All of these tools: GitHub, RStudio, R and the distill package are free?
 
 There are a variety of ways to create a distill website but this is one that works well for me. Indeed this website was created from the code and the steps given below.
 
@@ -27,7 +29,7 @@ There are a variety of ways to create a distill website but this is one that wor
 # Getting started
 In order to get started you will need to be registered on GitHub and have RStudio and R installed on our computer. The distill package will also need to be installed (see <https://rstudio.github.io/distill/website.html>). 
 
-The main code for the layout of the website will be written in Rmarkdown (a good introduction can be found here <https://rmarkdown.rstudio.com/.)
+The main code for the layout of the website will be written in R Markdown (a good introduction can be found here <https://rmarkdown.rstudio.com/.)
 
 <br>
 
@@ -75,7 +77,9 @@ Next we create a new project in RStudio using the 'Version Control' option. This
 
 ![](screenshots/Slide7.PNG)
 
-RStudio now 'pulls' the pre-exising files from your GitHub URL into your project folder. You will see the files appear in your environment pane.
+<br>
+
+RStudio now 'pulls' the pre-existing files from your GitHub URL into your project folder. You will see the files appear in your environment pane.
 
 ![](screenshots/Slide8.PNG)
 
@@ -95,7 +99,7 @@ This will then create the files required for a simple website including a home a
 
 ![](screenshots/Slide10.PNG)
 
-You will then be presented with your index.Rmd (RMarkdown) file which forms your website's home page. The top portion of your RMarkdown file, bounded by a line of dashes (**`---`**), contains the YAML script which defines the look of a particular page. This can be altered to customise some aspects of the page's layout.
+You will then be presented with your index.Rmd (R Markdown) file which forms your website's home page. The top portion of your R Markdown file, bounded by a line of dashes (**`---`**), contains the YAML script which defines the look of a particular page. This can be altered to customise some aspects of the page's layout.
 
 ![](screenshots/Slide11.PNG)
 
@@ -108,15 +112,16 @@ Next close the project and reopen it.
 
 ## Build the website
 
-A build tab (should now appear in the top right hand corner pane. Click on it.  Click on it and your website be rendered by RStudio. If you open the buidl tab you will be presented with a hammer icon labelled **Build Website**. When you click on the icon on it your files will be formatted for website deployment and the website will be rendered in an RStudio window.  If you fully open the window you will see an option in the top left hand side to **Open the Website** in your browser -- this will give you a good indication of its final look.
-
-<br>
+A build tab (should now appear in the top right hand corner pane. Click on it.  Click on it and your website be rendered by RStudio. If you open the build tab you will be presented with a hammer icon labeled **Build Website**. When you click on the icon on it your files will be formatted for website deployment and the website will be rendered in an RStudio window.  If you fully open the window you will see an option in the top left hand side to **Open the Website** in your browser -- this will give you a good indication of its final look.
 
 ![](screenshots/Slide12.PNG)
 
+<br>
+
+
 ## Commit changes to GitHub
 
-Now when we click on the Git tab up on the right hand side, we will see there a list is compiled of the the file changes we have made since we first 'pulled' from GitHub.  What we want to do is 'commit' these changes to GitHUb, which means that these changes will be implemented when we next 'push' the changes to out repository. To do this we tick all the files we want updated (which is all of them) and then press the commit button.
+Now when we click on the Git tab up on the right hand side, we will see there a list is compiled of the the file changes we have made since we first 'pulled' from GitHub.  What we want to do is 'commit' these changes to GitHub, which means that these changes will be implemented when we next 'push' the changes to out repository. To do this we tick all the files we want updated (which is all of them) and then press the commit button.
 
 ![](screenshots/Slide13.PNG)
 
@@ -150,9 +155,10 @@ Now that you have done that you will see highlighted text appears saying "Your s
 
 ![](screenshots/Slide17.PNG)
 
-<br>
 
 Copy the URL to your browser and hit enter.
+
+<br>
 
 # Admire your website
 
@@ -163,12 +169,14 @@ Be patient -- it may take 10-15 minutes for your website to appear. Take time ou
 
 # Next steps
 
-You are now in a position to add more content to your website by ammending existing Rmarkdown pages or adding new ones. 
+You are now in a position to add more content to your website by amending existing R Markdown pages or adding new ones. A great place to start on this journey is <https://rstudio.github.io/distill/> 
 
 
 ## Acknowledgments {.appendix}
 
-This website would not be possible with out the tools made by RStudio especially the 'distill' package by  J.J. Allaire, Rich Iannone, Alison Presmanes Hill, and Yihui Xie.
+This website would not be possible with out the tools made by RStudio especially the 'distill' package (@allaire2018distill).
 
+## Code {.appendix}
+The final code used to render this page is available at <https://github.com/NathanWhitmore/Distill_example>
 
 
