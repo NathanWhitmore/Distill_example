@@ -174,7 +174,7 @@ You are now in a position to add more content to your website by amending existi
 
 ## Acknowledgments {.appendix}
 
-This website would not be possible with out the tools made by RStudio especially the 'distill' package (@allaire2018distill).
+This website would not be possible with out the tools made by RStudio especially the 'distill' package [@allaire2018distill].
 
 ## Code {.appendix}
 The final code used to render this page is available at <https://github.com/NathanWhitmore/Distill_example>
