@@ -20,16 +20,14 @@ site: distill::distill_website
 
 
 # Synopsis
-We can create great technical websites using program [R](https://www.r-project.org/), [RStudio](https://www.rstudio.com/products/rstudio/download/), the [distill](https://rstudio.github.io/distill/) package, and [GitHub](https://github.com) pages. Furthermore, by using GitHub as our code repository we can ensure that our code is safe and reproducible. Thanks to GitHub, which is a code repository, we can roll back changes if we damage our code. All of these tools: GitHub, RStudio, R and the distill package are free,
+We can create great technical websites using program [R](https://www.r-project.org/), [RStudio](https://www.rstudio.com/products/rstudio/download/), the [distill](https://rstudio.github.io/distill/) package, and [GitHub](https://github.com) pages. Furthermore, by using GitHub as our code repository we can ensure that our code is safe and reproducible. Thanks to GitHub, we can roll back changes if we ever damage our code. All of these tools: GitHub, RStudio, R and the distill package are free.
 
 In the sections below I show how you can create a distill website with nothing more than a basic working knowledge of GitHub, RStudio, and R Markdown formatting. There are various alternate ways of creating a distill website but this is the version that works well for me. Indeed, this website was created from the code and the steps given below.
 
 <br>
 
 # Getting started
-In order to get started you will need to be registered on GitHub and have RStudio and R installed on our computer. The distill package will also need to be installed (see <https://rstudio.github.io/distill/website.html>). 
-
-The main code for the layout of the website will be written in R Markdown (a good introduction can be found here <https://rmarkdown.rstudio.com/.)
+In order to get started you will need to be registered on GitHub and have RStudio and R installed on our computer. The distill package will also need to be installed (see <https://rstudio.github.io/distill/website.html>). For the purposes of this example I will assume you have some working knowledge of R and RStudio. The main code for the layout of the website will be written in R Markdown. If you are unfamiliar with R Markdown a good introduction can be found here <https://rmarkdown.rstudio.com/>.)
 
 <br>
 
@@ -43,16 +41,16 @@ We begin by creating a new GitHub repository, giving the project a description, 
 
 ## Copy URL 
 
-The next step is to go to the green radio button and copy the URL. We will need pass this information to RStudio so it knows where to put the files when it exports to GitHub (a process known as a 'push').
+The next step is to go to the green radio button and copy the URL. We will need pass this information to RStudio so it knows where to put the files when it exports to GitHub (a process known as a ***push***).
 
 ![](screenshots/Slide2.PNG)
 
 <br>
 
 
-## Install 'distill' package
+## Install distill package
 
-Now install the 'distill' package in RStudio either via the 'Packages' pane or via the following code:
+Now install the distill package in RStudio either via the Packages pane in RStudio or via the following code:
 
 ```{r eval = FALSE}
 install.packages("distill")
@@ -61,7 +59,7 @@ install.packages("distill")
 <br>
 
 ## New project via Version Control
-Next we create a new project in RStudio using the 'Version Control' option. This allows us to link our GitHub URL to our RStudio project.
+Next we create a new project in RStudio using the **Version Control** option. This allows us to link our GitHub URL to our RStudio project.
 
 ![](screenshots/Slide5.PNG)
 
@@ -79,7 +77,7 @@ Next we create a new project in RStudio using the 'Version Control' option. This
 
 <br>
 
-RStudio now 'pulls' the pre-existing files from your GitHub URL into your project folder. You will see the files appear in your environment pane.
+RStudio now ***pulls*** the pre-existing files from your GitHub URL into your project folder. You will see the files appear in your environment pane.
 
 ![](screenshots/Slide8.PNG)
 
@@ -95,7 +93,7 @@ library(distill)
 create_website(dir = ".", title = "distill_example", gh_pages = TRUE)
 ```
 
-This will then create the files required for a simple website including a home and about tab.
+This will then create the files required for a simple website including a **home** and **about** tab.
 
 ![](screenshots/Slide10.PNG)
 
@@ -121,7 +119,7 @@ A build tab (should now appear in the top right hand corner pane. Click on it.  
 
 ## Commit changes to GitHub
 
-Now when we click on the Git tab up on the right hand side, we will see there a list is compiled of the the file changes we have made since we first 'pulled' from GitHub.  What we want to do is 'commit' these changes to GitHub, which means that these changes will be implemented when we next 'push' the changes to out repository. To do this we tick all the files we want updated (which is all of them) and then press the commit button.
+Now when we click on the Git tab up on the right hand side, we will see there a list is compiled of the the file changes we have made since we first ***pulled*** from GitHub.  What we want to do is ***commit*** these changes to GitHub, which means that these changes will be implemented when we next ***push*** the changes to out repository. To do this we tick all the files we want updated (which is all of them) and then press the commit button.
 
 ![](screenshots/Slide13.PNG)
 
@@ -174,7 +172,7 @@ You are now in a position to add more content to your website by amending your e
 
 ## Acknowledgments {.appendix}
 
-This website would not be possible with out the tools made by RStudio especially the 'distill' package [@allaire2018distill].
+This website would not be possible with out the tools made by RStudio especially the distill package [@allaire2018distill].
 
 ## Code {.appendix}
 The final code used to render this page is available at <https://github.com/NathanWhitmore/Distill_example>

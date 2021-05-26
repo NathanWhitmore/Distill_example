@@ -2103,7 +2103,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li><a href="#getting-started">Getting started</a><ul>
 <li><a href="#create-repository">Create repository</a></li>
 <li><a href="#copy-url">Copy URL</a></li>
-<li><a href="#install-distill-package">Install ‘distill’ package</a></li>
+<li><a href="#install-distill-package">Install distill package</a></li>
 <li><a href="#new-project-via-version-control">New project via Version Control</a></li>
 <li><a href="#render-website">Render website</a></li>
 <li><a href="#build-the-website">Build the website</a></li>
@@ -2120,23 +2120,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </nav>
 </div>
 <h1 id="synopsis">Synopsis</h1>
-<p>We can create great technical websites using program <a href="https://www.r-project.org/">R</a>, <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a>, the <a href="https://rstudio.github.io/distill/">distill</a> package, and <a href="https://github.com">GitHub</a> pages. Furthermore, by using GitHub as our code repository we can ensure that our code is safe and reproducible. Thanks to GitHub, which is a code repository, we can roll back changes if we damage our code. All of these tools: GitHub, RStudio, R and the distill package are free,</p>
+<p>We can create great technical websites using program <a href="https://www.r-project.org/">R</a>, <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a>, the <a href="https://rstudio.github.io/distill/">distill</a> package, and <a href="https://github.com">GitHub</a> pages. Furthermore, by using GitHub as our code repository we can ensure that our code is safe and reproducible. Thanks to GitHub, we can roll back changes if we ever damage our code. All of these tools: GitHub, RStudio, R and the distill package are free.</p>
 <p>In the sections below I show how you can create a distill website with nothing more than a basic working knowledge of GitHub, RStudio, and R Markdown formatting. There are various alternate ways of creating a distill website but this is the version that works well for me. Indeed, this website was created from the code and the steps given below.</p>
 <p><br></p>
 <h1 id="getting-started">Getting started</h1>
-<p>In order to get started you will need to be registered on GitHub and have RStudio and R installed on our computer. The distill package will also need to be installed (see <a href="https://rstudio.github.io/distill/website.html" class="uri">https://rstudio.github.io/distill/website.html</a>).</p>
-<p>The main code for the layout of the website will be written in R Markdown (a good introduction can be found here &lt;<a href="https://rmarkdown.rstudio.com/" class="uri">https://rmarkdown.rstudio.com/</a>.)</p>
+<p>In order to get started you will need to be registered on GitHub and have RStudio and R installed on our computer. The distill package will also need to be installed (see <a href="https://rstudio.github.io/distill/website.html" class="uri">https://rstudio.github.io/distill/website.html</a>). For the purposes of this example I will assume you have some working knowledge of R and RStudio. The main code for the layout of the website will be written in R Markdown. If you are unfamiliar with R Markdown a good introduction can be found here <a href="https://rmarkdown.rstudio.com/" class="uri">https://rmarkdown.rstudio.com/</a>.)</p>
 <p><br></p>
 <h2 id="create-repository">Create repository</h2>
 <p>We begin by creating a new GitHub repository, giving the project a description, a readme file, and a license. This basically creates a place on the internet for our files.</p>
 <p><img src="screenshots/Slide1.PNG" /></p>
 <p><br></p>
 <h2 id="copy-url">Copy URL</h2>
-<p>The next step is to go to the green radio button and copy the URL. We will need pass this information to RStudio so it knows where to put the files when it exports to GitHub (a process known as a ‘push’).</p>
+<p>The next step is to go to the green radio button and copy the URL. We will need pass this information to RStudio so it knows where to put the files when it exports to GitHub (a process known as a <strong><em>push</em></strong>).</p>
 <p><img src="screenshots/Slide2.PNG" /></p>
 <p><br></p>
-<h2 id="install-distill-package">Install ‘distill’ package</h2>
-<p>Now install the ‘distill’ package in RStudio either via the ‘Packages’ pane or via the following code:</p>
+<h2 id="install-distill-package">Install distill package</h2>
+<p>Now install the distill package in RStudio either via the Packages pane in RStudio or via the following code:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='st'>"distill"</span><span class='op'>)</span>
@@ -2145,7 +2144,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <p><br></p>
 <h2 id="new-project-via-version-control">New project via Version Control</h2>
-<p>Next we create a new project in RStudio using the ‘Version Control’ option. This allows us to link our GitHub URL to our RStudio project.</p>
+<p>Next we create a new project in RStudio using the <strong>Version Control</strong> option. This allows us to link our GitHub URL to our RStudio project.</p>
 <p><img src="screenshots/Slide5.PNG" /></p>
 <p><br></p>
 <h3 id="choose-git">Choose Git</h3>
@@ -2154,7 +2153,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h3 id="paste-url">Paste URL</h3>
 <p><img src="screenshots/Slide7.PNG" /></p>
 <p><br></p>
-<p>RStudio now ‘pulls’ the pre-existing files from your GitHub URL into your project folder. You will see the files appear in your environment pane.</p>
+<p>RStudio now <strong><em>pulls</em></strong> the pre-existing files from your GitHub URL into your project folder. You will see the files appear in your environment pane.</p>
 <p><img src="screenshots/Slide8.PNG" /></p>
 <p><br></p>
 <h2 id="render-website">Render website</h2>
@@ -2167,7 +2166,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </code></pre>
 </div>
 </div>
-<p>This will then create the files required for a simple website including a home and about tab.</p>
+<p>This will then create the files required for a simple website including a <strong>home</strong> and <strong>about</strong> tab.</p>
 <p><img src="screenshots/Slide10.PNG" /></p>
 <p>You will then be presented with your index.Rmd (R Markdown) file which forms your website’s home page. The top portion of your R Markdown file, bounded by a line of dashes (<strong><code>---</code></strong>), contains the YAML script which defines the look of a particular page. This can be altered to customise some aspects of the page’s layout.</p>
 <p><img src="screenshots/Slide11.PNG" /></p>
@@ -2179,7 +2178,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><img src="screenshots/Slide12.PNG" /></p>
 <p><br></p>
 <h2 id="commit-changes-to-github">Commit changes to GitHub</h2>
-<p>Now when we click on the Git tab up on the right hand side, we will see there a list is compiled of the the file changes we have made since we first ‘pulled’ from GitHub. What we want to do is ‘commit’ these changes to GitHub, which means that these changes will be implemented when we next ‘push’ the changes to out repository. To do this we tick all the files we want updated (which is all of them) and then press the commit button.</p>
+<p>Now when we click on the Git tab up on the right hand side, we will see there a list is compiled of the the file changes we have made since we first <strong><em>pulled</em></strong> from GitHub. What we want to do is <strong><em>commit</em></strong> these changes to GitHub, which means that these changes will be implemented when we next <strong><em>push</em></strong> the changes to out repository. To do this we tick all the files we want updated (which is all of them) and then press the commit button.</p>
 <p><img src="screenshots/Slide13.PNG" /></p>
 <p>We will then be asked to add a comment (which will help us track the changes we make). Now, it is important to know that nothing will update on the GitHub site until we press the push button. Once we press the push button we will see something like:</p>
 <p><img src="screenshots/Slide14.PNG" /></p>
@@ -2203,7 +2202,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1 id="next-steps">Next steps</h1>
 <p>You are now in a position to add more content to your website by amending your existing R Markdown pages (index.Rmd, which is your home page, or about.Rmd) or adding new ones. A great place to start on this journey is <a href="https://rstudio.github.io/distill/" class="uri">https://rstudio.github.io/distill/</a>.</p>
 <h2 id="acknowledgments" class="appendix">Acknowledgments</h2>
-<p>This website would not be possible with out the tools made by RStudio especially the ‘distill’ package <span class="citation" data-cites="allaire2018distill">(Allaire et al. <a href="#ref-allaire2018distill" role="doc-biblioref">2018</a>)</span>.</p>
+<p>This website would not be possible with out the tools made by RStudio especially the distill package <span class="citation" data-cites="allaire2018distill">(Allaire et al. <a href="#ref-allaire2018distill" role="doc-biblioref">2018</a>)</span>.</p>
 <h2 id="code" class="appendix">Code</h2>
 <p>The final code used to render this page is available at <a href="https://github.com/NathanWhitmore/Distill_example" class="uri">https://github.com/NathanWhitmore/Distill_example</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
