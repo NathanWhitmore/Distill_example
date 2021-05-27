@@ -1,11 +1,11 @@
 ---
-title: "About this site"
+title: "About me"
 description: |
-  Some generic information about me
+  In your website you add a description here.
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-My name is I'm Nathan, and I’m a conservation scientist and practitioner. If you want to get in touch feel free to do so through my GitHub site: <https://github.com/NathanWhitmore>
+My name is I'm Nathan, and I’m a conservation scientist and practitioner. If you want to get in touch feel free to do so through: <https://nathanwhitmore.github.io/reproducible/contact.html>

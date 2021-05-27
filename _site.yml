@@ -1,5 +1,5 @@
 name: "."
-title: "An example"
+title: "Reproducible"
 description: |
   Instructions to make a distill website in program R
 output_dir: "docs"
