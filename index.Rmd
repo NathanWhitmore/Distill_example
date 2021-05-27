@@ -20,7 +20,7 @@ site: distill::distill_website
 
 
 # Synopsis
-Anyone can create a great technical website using program [R](https://www.r-project.org/), [RStudio](https://www.rstudio.com/products/rstudio/download/), the [distill](https://rstudio.github.io/distill/) package, and [GitHub](https://github.com) pages. Furthermore, by using GitHub as our code repository we can ensure that our code is safe and reproducible. Thanks to GitHub, we can roll back changes if we ever damage our code. All of these tools: GitHub, RStudio, R and the distill package are free.
+Anyone can create a great technical website (that looks like this one) using program [R](https://www.r-project.org/), [RStudio](https://www.rstudio.com/products/rstudio/download/), the [distill](https://rstudio.github.io/distill/) package, and [GitHub](https://github.com) pages. Furthermore, by using GitHub as our code repository we can ensure that our code is safe and reproducible. Thanks to GitHub, we can roll back changes if we ever damage our code. All of these tools: GitHub, RStudio, R and the distill package are free.
 
 In the sections below I show how you can create a distill website with nothing more than a basic working knowledge of GitHub, RStudio, and R Markdown formatting. There are various alternate ways of creating a distill website but this is the version that works well for me. Indeed, this website was created from the code and the steps given below.
 
